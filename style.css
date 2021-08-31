@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.container{
+  width: 1300px;
+  margin: auto;
+
+}
+.bg{
+    background: #f7f9ff;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+body,h1, h2, h3, h4, h5, h6, a, span {
+    font-family: 'Work Sans', sans-serif;
+}
+/* ----------------- Main Css ------------------ */
+.header-section {
+    background: #fff;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+.header-left{
+    width: 30%;
+}
+.header-right{
+    width: 70%;
+}
+.logo a img {
+    width: 88px;
+}
+.menu{}
+.menu ul{}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a {
+    display: block;
+    color: #272525;
+    padding: 0 15px;
+    line-height: 54px;
+    font-size: 17px;
+    font-weight: 400;
+}
+/* ------------- Banner section --------- */
+.banner-section{
+    padding: 220px 0;
+    background: url(img/kobu-agency-IWLR561-Yb-MY-unsplash.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner-content {
+    margin-top: 90px;
+}
+.banner-content h5 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.banner-content h1 {
+    font-size: 48px;
+    color: #fff;
+}
+.banner-content a.btn-yollow {
+    padding: 15px 25px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 8px;
+    color: #666;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: .4s;
+}
+.banner-content a.btn-yollow:hover{
+    background: #e6a943;
+    color: #fff;
+}
+/* --------------- Pricing Table ------------ */
+.pricing-table-section{
+    padding: 80px 0;
+    background: #f7f7f7;
+}
+.about-title h1 {
+    font-size: 43px;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 30px;
+}
+.about-title h4 {
+    font-size: 23px;
+    color: #676767;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+.pricing-table-section .about-title h1 {
+    font-weight: 500;
+    font-size: 54px;
+}
+.pricing-table-section .about-title h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+.pricing-section {
+    padding: 45px 0px 100px 0;
+}
+
+.title-2 h1 {
+    font-weight: 500;
+}
+.pricing-table-content {
+    margin-top: 80px;
+}
+.pricing-table {
+    width: 31%;
+    margin-right: 3%;
+    box-shadow: 2px 2px 10px rgba(98 120 223 / 10%);
+}
+.pricing-table:nth-child(3){
+    margin-right: 0;
+}
+.pricing-content {
+    background: #fff;
+    padding: 40px 40px 27px 40px;
+    border-bottom: 1px solid #ddd;
+}
+.pricing-content h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+.pricing-content h1 {
+    font-size: 50px;
+    margin: 27px 0 39px 0;
+    background: #f7f7f7;
+    padding: 0 12px;
+    transition: .4s;
+}
+.pricing-content h1 span {
+    font-size: 20px;
+}
+.pricing-content h5 {
+    font-size: 21px;
+    margin-bottom: 19px;
+    font-weight: 500;
+}
+.pricing-content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #232323;
+    line-height: 32px;
+}
+
+.pricing-list {
+    background: #fff;
+    padding: 40px 40px;
+}
+.pricing-list ul{
+    list-style: none;
+}
+.pricing-list ul li {
+    font-size: 20px;
+    color: #676767;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 8px;
+}
+.pricing-table:hover{
+    box-shadow: 2px 2px 10px rgba(98 120 223 / 20%);
+    transition: .4s;
+}
+.pricing-table:hover .pricing-content p{
+    color: #fff;
+    transition: .4s;
+}
+.pricing-table:hover .pricing-content{
+    background:#e79231;
+    color: #fff;
+    transition: .4s;
+}
+.pricing-table:hover a.btn-primary-2{
+    background:#e79231;
+    color: #fff;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64 87 191 / 30%);
+    transition: .4s;
+}
+.pricing-table:hover .pricing-content h1{
+    background: #e79231;
+    color: #fff;
+}
+.pricing-btn a.btn-primary-2 {
+    display: inline-block;
+    padding: 21px 10px;
+    margin-top: 30px;
+    color: #676767;
+    width: 50%;
+    font-weight: 600;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64 87 191 / 20%);
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.pricing-list ul li span {
+    font-size: 25px;
+    font-weight: 600;
+    color: #e79231;
+    margin-right: 16px;
+}
+/* -------------- team-section -------------- */
+.team-section{
+    padding: 80px 0;
+}
+.team-wrap {
+    margin-top: 70px;
+}
+.team-content {
+    width: 23%;
+    border: 7px double #e79231;
+    margin-right: 2.5%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 15px rgba(0 1 0 / 20%);
+}
+.team-content:last-child{
+    margin-right: 0;
+}
+.team-content h4 {
+    display: inline-block;
+    padding: 28px 18px 18px 18px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.team-content p {
+    margin: -4px 0 25px 20px;
+    font-size: 17px;
+}
+/*----------- newsletter -----------*/
+.newsletter-section{
+    padding: 80px 0;
+    background: #f5f5f5;
+}
+.newsletter-form {
+    margin-top: 80px;
+}
+.input-d {
+    padding: 23px 20px;
+    width: 250px;
+    display: inline-block;
+    font-size: 17px;
+    border: 2px solid #bdc731;
+    border-radius: 5px;
+    box-shadow: 1px 1px 17px rgba(98 120 223 / 30%);
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+.n-100 {
+    width: 44%;
+    margin: auto;
+    display: block;
+    margin-bottom: 19px;
+    border: 2px solid #bdc731;
+}
+.n-100:focus{
+    box-shadow: 1px 1px 17px rgba(25, 163, 133, 0.5);
+    border: 2px solid #94a491;
+    outline: none;
+}
+button.submit-btn {
+    padding: 22px 70px;
+    display: inline-block;
+    margin-left: 5px;
+    border: 2px solid transparent;
+    background: #ae9228;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .4s;
+}
+button.submit-btn:hover{
+    background: #fff;
+    color: #ae9228;
+    border: 2px solid #ae9228;
+    box-shadow: 1px 1px 17px rgba(98 120 223 / 70%);
+}
+.newsletter-section .about-title h4 {
+    font-size: 20px;
+}
+/* ------------- Work Section ------------ */
+.work-section{
+    padding: 10px 0 5px 0;
+}
+.work-left{
+    width: 40%;
+}
+.work-right{
+    width: 58%;
+}
+.work-left img {
+    width: 100%;
+}
+.work-right h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #555555;
+}
+.work-right h2 span {
+    margin-right: 13px;
+}
+.work-right p {
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 500;
+    color: #676767;
+    margin-bottom: 20px;
+}
+.work-right p :last-child{
+    margin-bottom: 10px;
+}
+/* -------------- testtimonial section -------- */
+.clint-section {
+    padding: 80px 0;
+    background: #f5f5f5;
+
+}
+.clint-aria{}
+.clint-content {
+    width: 31%;
+    margin-right: 3%;
+    border: 1px solid #000;
+    margin-top: 40px;
+}
+.clint-section .about-title h4 {
+    margin-bottom: 70px;
+    color: #000;
+    margin-top: 40px;
+}
+.clint-section .about-title {
+    margin-bottom: 100px;
+}
+.clint-content:nth-child(3){
+    margin-right: 0;
+}
+.clint-text {
+    padding: 40px;
+    background: #fff;
+    position: relative;
+    box-shadow: 3px 4px 30px 0 rgb(98 120 223 / 20%);
+}
+.clint-text::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -295px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.clint-text p {
+    line-height: 39px;
+    font-size: 20px;
+    color: #888;
+    position: relative;
+}
+.clint-text p::before {
+	content: "\f10d";
+	font-family: FontAwesome;
+	font-size: 65px;
+	position: absolute;
+	opacity: .3;
+	top: -4px;
+	left: -9px;
+	color: #cccccc;
+}
+.clint-name{}
+.clint-name img {
+    width: 90px;
+    margin-top: 40px;
+    margin-left: 57px;
+    border: 8px solid #a9962c;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 39px;
+}
+.clint-b {
+    margin-left: 22px;
+    display: inline-block;
+}
+.clint-b h5 {
+    margin-top: 72px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+}
+.clint-b p {
+    font-size: 20px;
+    color: #666;
+    margin-top: 6px;
+}
+/* --------------- Contact section --------- */
+.contact-section{
+    padding: 80px 0;
+}
+.contact-wrap{
+    width: 780px;
+    margin: auto;
+}
+.w-50{
+    width: 48%;
+}
+.w-100{
+    width: 100%;
+}
+.newsletter-form textarea{
+    height: 200px;
+}
+.newsletter-form .input-d,.n-100{
+    border: 1px solid #aa972c;
+}
+.contact-title h3 {
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.contact-title p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #777;
+    line-height: 34px;
+    padding: 0 20px;
+}
+.footer-section {
+    padding: 10px 0 20px 0;
+}
+.footer-section h6 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
+
